@@ -86,7 +86,7 @@ function action(slct){
 	}
 
 	const result = 'https://'+slct+'/?'+q[1].replace(/[^a-zA-Z0-9]/g, p);
-	console.log(result);
+	location.href = result;
 }
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
