@@ -1,6 +1,99 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index, follow"><title></title><style type="text/css">#error-div,#header-div{margin:auto;text-align:center}.button,input[type=text]{padding:10px;font-size:18px}#new-url,#output-div{padding:5px;display:flex}#content-div,#input-div,#new-url,#output-div,.button,.content-row{display:flex}body{background-color:#264653;height:100vh;font-family:Avenir,sans-serif}#header-div{width:60%;padding-top:100px;font-family:"Josefin Sans",sans-serif;color:#e9c46a;font-size:40px}#content-div{flex-direction:column;width:80%;margin:auto}#input-div{width:80%;margin:auto auto 25px;flex-direction:row;justify-content:space-between}#output-div{flex-direction:row;width:80%;justify-content:space-between;background-color:#e9c46a;margin:auto auto 100px;border:3px solid #e9c46a;border-radius:10px;align-items:center}#error-div{width:80%;color:#e76f51;font-style:italic;font-size:18px}input[type=text]{width:70%;border:1px solid #fff;border-radius:10px}.button{background-color:#2a9d8f;color:#fff;align-items:center;justify-content:center;border:1px solid #2a9d8f;border-radius:10px;margin-left:5px;transition-duration:.2s}.button:hover{background-color:#297c74}#new-url{color:#000;font-size:24px}#new-url-label{font-size:18px;display:flex}</style></head><body><main><div id="header-div" class=""><h1 class="">Link Shortener</h1></div><div id="content-div"><div id="input-div"><input type="text" class="text-field content-row" placeholder="Enter URL here . . ." id="input-field" required/><button id="shorten" type="button" class="content-row button">Shorten URL</button><button type="button" id="clear-btn" class="content-row button">Clear</button></div><div id="output-div"><div class="content-row" id="new-url-label">Your short URL:</div><div id="new-url" class="content-row"></div><button type="button" id="copy-btn" data-clipboard-target="#new-url" class="content-row button">Copy</button></div><div class="" id="error-div"><p class="content-row" id="error-text"></p></div></div></main></body>
 <script type="text/javascript">
-const _0x113be9=_0x52b8;(function(_0x5bec70,_0x239ccd){const _0x1686f5=_0x52b8,_0x3a91a6=_0x5bec70();while(!![]){try{const _0x47bf06=-parseInt(_0x1686f5(0x137))/0x1+parseInt(_0x1686f5(0x125))/0x2*(-parseInt(_0x1686f5(0x12e))/0x3)+parseInt(_0x1686f5(0x145))/0x4+parseInt(_0x1686f5(0x115))/0x5*(parseInt(_0x1686f5(0x141))/0x6)+parseInt(_0x1686f5(0x119))/0x7*(parseInt(_0x1686f5(0x12c))/0x8)+parseInt(_0x1686f5(0x133))/0x9+-parseInt(_0x1686f5(0x13c))/0xa*(parseInt(_0x1686f5(0x12d))/0xb);if(_0x47bf06===_0x239ccd)break;else _0x3a91a6['push'](_0x3a91a6['shift']());}catch(_0x35aa25){_0x3a91a6['push'](_0x3a91a6['shift']());}}}(_0x4646,0xa7085));function _0x4646(){const _0x1a85fb=['weyopan.github.io','muekopa.github.io','diyuha.github.io','10tLDOci','gger','keranji.github.io','apply','repanu.github.io','7163748fadJko','test','jokmina.github.io','uefaz.github.io','670620gzcynn','teriosa.github.io','poipok.github.io','hokamnu.github.io','stateObject','\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','asegaff.github.io','hayuzio.github.io','chain','ioponu.github.io','jayakrto.github.io','counter','debu','girabu.github.io','action','talaju.github.io','haulepo.github.io','cirutam.github.io','random','mindalep.github.io','jokwido.github.io','dopiru.github.io','5fIlQHR','search','length','wotiru.github.io','40243InljZv','location','uhajong.github.io','constructor','jakolwo.github.io','gurimaz.github.io','niropab.github.io','thomtamb.github.io','cilembu.github.io','rupima.github.io','log','teriota.github.io','6hlGdxt','split','floor','includes','replace','while\x20(true)\x20{}','input','1392Eebtte','5365316ZaGVPu','611421FiqPVh','jokipri.github.io','kujimap.github.io','https://','rokunam.github.io','6196428SGkXVc','init','hajirome.github.io','padibyo.github.io','1267089QAzfRI','lainyuka.github.io'];_0x4646=function(){return _0x1a85fb;};return _0x4646();}const url_list=['kihause.github.io',_0x113be9(0x11b),_0x113be9(0x154),_0x113be9(0x152),_0x113be9(0x140),_0x113be9(0x121),'kuvuka.github.io',_0x113be9(0x120),_0x113be9(0x13b),'rupanmu.github.io',_0x113be9(0x14e),_0x113be9(0x130),'tomatsku.github.io','girumak.github.io','raimoc.github.io',_0x113be9(0x11d),_0x113be9(0x14c),'hijeram.github.io','skipada.github.io',_0x113be9(0x122),'matuoz.github.io',_0x113be9(0x144),_0x113be9(0x12f),'juandru.github.io',_0x113be9(0x11e),_0x113be9(0x13e),_0x113be9(0x147),_0x113be9(0x14b),_0x113be9(0x124),_0x113be9(0x118),_0x113be9(0x114),'tapolew.github.io',_0x113be9(0x155),_0x113be9(0x139),_0x113be9(0x14f),_0x113be9(0x158),_0x113be9(0x13a),_0x113be9(0x11f),_0x113be9(0x148),_0x113be9(0x156),_0x113be9(0x138),'srikatma.github.io','antropa.github.io',_0x113be9(0x132),_0x113be9(0x143),_0x113be9(0x146),'dosenui.github.io',_0x113be9(0x136),_0x113be9(0x135),_0x113be9(0x113)];window[_0x113be9(0x11a)][_0x113be9(0x116)][_0x113be9(0x128)]('?')&&action(shuffleArray(url_list));function action(_0x58ce3e){const _0x42bb65=_0x113be9;let _0x2a4233=window[_0x42bb65(0x11a)]['search'][_0x42bb65(0x126)]('?'),_0x1a3c43='';if(_0x2a4233[0x1][_0x42bb65(0x128)]('='))_0x1a3c43='+';else{if(_0x2a4233[0x1][_0x42bb65(0x128)]('+'))_0x1a3c43='-';else{if(_0x2a4233[0x1][_0x42bb65(0x128)]('-'))_0x1a3c43='~';else{if(_0x2a4233[0x1][_0x42bb65(0x128)]('~'))_0x1a3c43='_';else{if(_0x2a4233[0x1][_0x42bb65(0x128)]('_'))_0x1a3c43='&';else{if(_0x2a4233[0x1]['includes']('&'))_0x1a3c43='/';else{if(_0x2a4233[0x1][_0x42bb65(0x128)]('/'))_0x1a3c43='(';else{if(_0x2a4233[0x1][_0x42bb65(0x128)]('('))_0x1a3c43=')';else{if(_0x2a4233[0x1]['includes'](')'))_0x1a3c43=':';else{if(_0x2a4233[0x1][_0x42bb65(0x128)](':'))_0x1a3c43='.';else{if(_0x2a4233[0x1][_0x42bb65(0x128)]('.'))_0x1a3c43='=';else return;}}}}}}}}}}const _0x233747=_0x42bb65(0x131)+_0x58ce3e+'/?'+_0x2a4233[0x1][_0x42bb65(0x129)](/[^a-zA-Z0-9]/g,_0x1a3c43);console[_0x42bb65(0x123)](_0x233747);}function _0x52b8(_0x3060a4,_0x491b1a){const _0x4766fc=_0x4646();return _0x52b8=function(_0x22cb79,_0x577af7){_0x22cb79=_0x22cb79-0x113;let _0x46463b=_0x4766fc[_0x22cb79];return _0x46463b;},_0x52b8(_0x3060a4,_0x491b1a);}function shuffleArray(_0x152739){const _0x1be683=_0x113be9,_0x545017=(function(){let _0x2a2816=!![];return function(_0x1391e3,_0xcd55e){const _0x3132f9=_0x2a2816?function(){const _0x480df9=_0x52b8;if(_0xcd55e){const _0x4bb55d=_0xcd55e[_0x480df9(0x13f)](_0x1391e3,arguments);return _0xcd55e=null,_0x4bb55d;}}:function(){};return _0x2a2816=![],_0x3132f9;};}());(function(){_0x545017(this,function(){const _0x56b0ea=_0x52b8,_0x14c49a=new RegExp('function\x20*\x5c(\x20*\x5c)'),_0x7bb658=new RegExp(_0x56b0ea(0x14a),'i'),_0x49ce33=_0x22cb79(_0x56b0ea(0x134));!_0x14c49a['test'](_0x49ce33+_0x56b0ea(0x14d))||!_0x7bb658[_0x56b0ea(0x142)](_0x49ce33+_0x56b0ea(0x12b))?_0x49ce33('0'):_0x22cb79();})();}());for(let _0x27f9ec=_0x152739['length']-0x1;_0x27f9ec>0x0;_0x27f9ec--){const _0x52b1cb=Math[_0x1be683(0x127)](Math[_0x1be683(0x157)]()*(_0x27f9ec+0x1));[_0x152739[_0x27f9ec],_0x152739[_0x52b1cb]]=[_0x152739[_0x52b1cb],_0x152739[_0x27f9ec]];}return _0x152739[0x0];}function _0x22cb79(_0x5c24f1){function _0x34451b(_0xbf8a79){const _0x395e85=_0x52b8;if(typeof _0xbf8a79==='string')return function(_0xde2efc){}[_0x395e85(0x11c)](_0x395e85(0x12a))['apply'](_0x395e85(0x150));else(''+_0xbf8a79/_0xbf8a79)[_0x395e85(0x117)]!==0x1||_0xbf8a79%0x14===0x0?function(){return!![];}['constructor'](_0x395e85(0x151)+_0x395e85(0x13d))['call'](_0x395e85(0x153)):function(){return![];}['constructor'](_0x395e85(0x151)+'gger')[_0x395e85(0x13f)](_0x395e85(0x149));_0x34451b(++_0xbf8a79);}try{if(_0x5c24f1)return _0x34451b;else _0x34451b(0x0);}catch(_0x4627c8){}}
+const url_list = [
+	'kihause.github.io',
+	'uhajong.github.io',
+	'talaju.github.io',
+	'girabu.github.io',
+	'repanu.github.io',
+	'cilembu.github.io',
+	'kuvuka.github.io',
+	'thomtamb.github.io',
+	'diyuha.github.io',
+	'rupanmu.github.io',
+	'ioponu.github.io',
+	'kujimap.github.io',
+	'tomatsku.github.io',
+	'girumak.github.io',
+	'raimoc.github.io',
+	'jakolwo.github.io',
+	'hayuzio.github.io',
+	'hijeram.github.io',
+	'skipada.github.io',
+	'rupima.github.io',
+	'matuoz.github.io',
+	'uefaz.github.io',
+	'jokipri.github.io',
+	'juandru.github.io',
+	'gurimaz.github.io',
+	'keranji.github.io',
+	'poipok.github.io',
+	'asegaff.github.io',
+	'teriota.github.io',
+	'wotiru.github.io',
+	'dopiru.github.io',
+	'tapolew.github.io',
+	'haulepo.github.io',
+	'weyopan.github.io',
+	'jayakrto.github.io',
+	'mindalep.github.io',
+	'muekopa.github.io',
+	'niropab.github.io',
+	'hokamnu.github.io',
+	'cirutam.github.io',
+	'lainyuka.github.io',
+	'srikatma.github.io',
+	'antropa.github.io',
+	'rokunam.github.io',
+	'jokmina.github.io',
+	'teriosa.github.io',
+	'dosenui.github.io',
+	'padibyo.github.io',
+	'hajirome.github.io',
+	'jokwido.github.io'
+];
+if( window.location.search.includes('?') ){
+	action(shuffleArray(url_list));
+}
+function action(slct){
+	let q = window.location.search.split('?');
+	let p = '';
+	if( q[1].includes('=') ){
+		p = '+';
+	} else if( q[1].includes('+') ){
+		p = '-';
+	} else if( q[1].includes('-') ){
+		p = '~';
+	} else if( q[1].includes('~') ){
+		p = '_';
+	} else if( q[1].includes('_') ){
+		p = '&';
+	} else if( q[1].includes('&') ){
+		p = '/';
+	} else if( q[1].includes('/') ){
+		p = '(';
+	} else if( q[1].includes('(') ){
+		p = ')';
+	} else if( q[1].includes(')') ){
+		p = ':';
+	} else if( q[1].includes(':') ){
+		p = '.';
+	} else if( q[1].includes('.') ){
+		p = '=';
+	} else {
+		return;
+	}
+
+	const result = 'https://'+slct+'/?'+q[1].replace(/[^a-zA-Z0-9]/g, p);
+	console.log(result);
+}
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array[0];
+}
 </script>
 </html>
